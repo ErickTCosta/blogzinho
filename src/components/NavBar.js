@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const NavBar = () => {
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} d-flex justify-content-between aling-items-center p-4 `}>
         <NavLink to = '/ ' className={styles.brand}>
             <span> Blogzinho </span>
         </NavLink>

@@ -25,7 +25,7 @@ const Register = () => {
     }
 
   return (
-    <div className={styles.register}>
+    <div className={`${styles.register} container`}>
         <h2>Registre-se para postar seu conteúdo</h2>
         <p>Crie seu Usuário e compartilhe suas histórias.</p>
         <form onSubmit={ handleSubmit }>
@@ -45,8 +45,8 @@ const Register = () => {
                 <span>Confirme sua senha</span>
                 <input type="password" name='confirmPassword' required placeholder='Confirme sua sua senha'value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
             </label>
-            <button className='btn' type='submit'>Cadastrar</button>
-            {error && <p className='error'>{error}</p>}
+            <button className='btn btn-success my-4' type='submit'>Cadastrar</button>
+            {error && <p className={`text-danger ${styles.error}`}>{error}</p>}
         </form>
 
     </div>

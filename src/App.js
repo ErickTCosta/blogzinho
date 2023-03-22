@@ -1,5 +1,6 @@
 // Meus CSS
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Meus Imports
 

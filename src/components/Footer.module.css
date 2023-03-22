@@ -1,5 +1,4 @@
-footer {
-    text-align: center;
-    background-color: grey;
-    padding: 40px;
+.footer {
+    background-color: #edf3f6;
+    height: 100px;
 }
