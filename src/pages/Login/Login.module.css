@@ -1,0 +1,71 @@
+.login { 
+    text-align: center;
+    height: 600px;
+}
+
+.login p {
+    color: #aaa;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  input:focus, textarea:focus{ 
+    outline: none;
+  }
+  
+  a, nav button {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: black;
+    transition: .4s;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  a:hover, nav button:hover {
+    color: #bbb;
+  }
+  
+  form {
+    max-width: 40%;
+    margin: 0 auto; 
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  label span {
+    margin-bottom: .3em;
+    font-weight: bold;
+    text-align: left;
+    padding-top: .8em;
+  }
+  
+  input, textarea {
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: .8em 0px;
+    background-color: transparent;
+    padding-bottom: .8em;
+  }
+  
+  button [ disabled ] {
+    background-color: #aaa;
+  }
+  
+  .error {
+    background-color: #fabebe;
+    border: 1px solid #bbb;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  

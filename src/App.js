@@ -52,10 +52,10 @@ function App() {
             <Routes>
               <Route path="/" element = { <Home/> }/>
               <Route path="/about" element = { <About/> }/>
-              <Route path="/register" element = { <Register/> }/>
-              <Route path="/login" element = { <Login/> }/>
-              <Route path='/post/create' element = { <CreatPost/>}/>
-              <Route path='/dash' element = {<Dashboard/>} />
+              <Route path="/register" element = { !user ? <Register/> : <Navigate to="/"/> }/>
+              <Route path="/login" element = { !user ? <Login/> : <Navigate to="/"/> }/>
+              <Route path='/post/create' element = {user ? <CreatPost/> : <Navigate to= {'/login'}/>}/>
+              <Route path='/dash' element = { user ? <Dashboard/> : <Navigate to={"/login"}/>} />
             </Routes>
           </div>
         <Footer/>

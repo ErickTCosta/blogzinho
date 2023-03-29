@@ -62,7 +62,7 @@ input::placeholder, textarea::placeholder {
   }
   
   .error {
-    background-color: #edf3f6;
+    background-color: #fabebe;
     border: 1px solid #bbb;
     padding: 5px;
     border-radius: 5px;

@@ -4,7 +4,6 @@ import styles from './Login.module.css'
 import { useAuthentication } from '../../hooks/useAuthentication';
 import { useState, useEffect } from 'react'
 import { async } from '@firebase/util';
-import { redirect } from 'react-router-dom';
 import Dashboard from '../Dashboard/Dashboard';
 
 const Login = () => {
@@ -22,11 +21,16 @@ const Login = () => {
       password
     };
     const res = await login(user);
-
+    
   }
+    useEffect(() =>{
+      if (authError) {
+        setError(authError);
+      }
+    })
 
   return (
-    <section>
+    <section className={`${styles.login} container`}>
         <h2>Entrar</h2>
         <p>Faça o login para utilizar o sistema</p>
         <hr />
